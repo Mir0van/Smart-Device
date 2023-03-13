@@ -6,13 +6,33 @@
   cursor: pointer;
   display: block;
   text-align: center;
+  background-color: $color-brand;
+  padding: 17px 27px 17px;
+  letter-spacing: .95px;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: rgba($color-brand, 80%);
+  }
+
+  &:active {
+    background-color: rgba($color-brand, 50%);
+  }
+
+  @include vp-767() {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 12px 27px 12px;
+    width: 100%;
+    letter-spacing: .75px;
+  }
 
   &--secondary {
     @include font-values(700, 14px, 16px, $color-text-secondary);
     padding: 10px 16px 12px;
     border: 1px solid $color-text-secondary;
-    border-radius: 3px;
     letter-spacing: 0.8px;
+    background-color: transparent;
 
     &:hover {
       background-color: $color-text-secondary;
@@ -20,9 +40,8 @@
     }
 
     &:active {
-      background-color: $color-text-secondary;
+      background-color: rgba($color-text-secondary, 80%);
       color: $color-text;
-      opacity: 0.8;
     }
   }
 }
