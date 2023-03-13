@@ -1,0 +1,28 @@
+.button {
+  font-family: $font-secondary;
+
+  @include font-values(700, 18px, 21px, $color-text-secondary);
+  text-transform: uppercase;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+
+  &--secondary {
+    @include font-values(700, 14px, 16px, $color-text-secondary);
+    padding: 10px 16px 12px;
+    border: 1px solid $color-text-secondary;
+    border-radius: 3px;
+    letter-spacing: 0.8px;
+
+    &:hover {
+      background-color: $color-text-secondary;
+      color: $color-text;
+    }
+
+    &:active {
+      background-color: $color-text-secondary;
+      color: $color-text;
+      opacity: 0.8;
+    }
+  }
+}

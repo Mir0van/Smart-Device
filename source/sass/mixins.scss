@@ -76,7 +76,7 @@
 
 // my
 
-@mixin font-values($weight: 400, $size: 15px, $height: 1.6, $color: $main-color-text) {
+@mixin font-values($weight: 400, $size: 16px, $height: 18px, $color: $color-text) {
   font-weight: $weight;
   font-size: $size;
   line-height: $height;
