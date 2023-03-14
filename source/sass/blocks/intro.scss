@@ -8,7 +8,7 @@
 
   @media (min-width: $vp-1024) {
     @include retina() {
-        background-image: $color-mask, url("../../img/index/intro-background@2x.jpg");
+      background-image: $color-mask, url("../../img/index/intro-background@2x.jpg");
     }
   }
 

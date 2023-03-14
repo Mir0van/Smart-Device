@@ -8,7 +8,8 @@
   text-align: center;
   background-color: $color-brand;
   padding: 17px 27px 17px;
-  letter-spacing: .95px;
+  letter-spacing: 0.95px;
+  border: none;
   border-radius: 3px;
 
   &:hover {
@@ -24,7 +25,7 @@
     line-height: 16px;
     padding: 12px 27px 12px;
     width: 100%;
-    letter-spacing: .75px;
+    letter-spacing: 0.75px;
   }
 
   &--secondary {
@@ -42,6 +43,24 @@
     &:active {
       background-color: rgba($color-text-secondary, 80%);
       color: $color-text;
+    }
+  }
+
+  &--tertiary {
+    @include font-values(700, 14px, 16px, $color-brand);
+    padding: 10px 16px 12px;
+    border: 1px solid $color-brand;
+    letter-spacing: 0.8px;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $color-brand;
+      color: $color-text-secondary;
+    }
+
+    &:active {
+      background-color: rgba($color-brand, 80%);
+      color: $color-text-secondary;
     }
   }
 }

@@ -1,0 +1,103 @@
+.about__wrapper {
+  padding-top: 127px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto 1fr;
+  column-gap: 82px;
+  grid-template-areas:
+    "year title"
+    "year text"
+    "year button";
+
+  @include vp-1023() {
+    padding-top: 83px;
+    column-gap: 11px;
+  }
+
+  @include vp-767() {
+    padding-top: 47px;
+    display: block;
+  }
+
+  & > span {
+    @include font-values(700, 156px, 1, transparent);
+    font-family: $font-secondary;
+    background-image: url("../../img/index/year-mask.jpg");
+    background-repeat: no-repeat;
+    background-size: 586px 488px;
+    background-position: -190px -40px;
+    background-clip: text;
+    display: block;
+    grid-area: year;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    align-self: start;
+    margin-left: 12px;
+    margin-top: -3px;
+
+    @include vp-1023() {
+      margin-left: 8px;
+      margin-top: 1px;
+    }
+
+    @include vp-767() {
+      display: none;
+    }
+  }
+
+  & > h2 {
+    @include font-values(400, 36px, 36px);
+    font-family: $font-secondary;
+    grid-area: title;
+    margin: 0;
+    margin-bottom: 20px;
+
+    @include vp-767() {
+      font-size: 28px;
+      line-height: 39px;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.about__text-wrapper {
+  margin-bottom: 20px;
+
+  @include vp-1023() {
+    margin-bottom: -3px;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 20px;
+
+    @include vp-1023() {
+      line-height: 21.5px;
+      margin-bottom: 21px;
+    }
+
+    @include vp-767() {
+      font-size: 14px;
+      line-height: 19px;
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.about__text-hidden {
+  @include vp-767() {
+    display: none;
+  }
+}
+
+.about__button {
+  justify-self: start;
+  align-self: start;
+  padding: 14px 49px 13px;
+  grid-area: button;
+
+  @include vp-767() {
+    width: auto;
+    padding: 7px 40px 11px;
+  }
+}
