@@ -1,0 +1,124 @@
+.advantages__wrapper {
+  padding-top: 120px;
+
+  @include vp-1023() {
+    padding-top: 80px;
+  }
+
+  @include vp-767() {
+    padding-top: 50px;
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 32px;
+
+  @include vp-1023() {
+    gap: 30px;
+  }
+
+  @include vp-767() {
+    grid-template-columns: 1fr;
+  }
+}
+
+.advantages__item {
+  padding: 40px;
+  border: 1px solid $color-bg-tertiary;
+  border-left: 5px solid $color-brand;
+  min-height: 300px;
+  line-height: 21.7px;
+
+  svg {
+    display: block;
+    margin-bottom: 20px;
+
+    @include vp-1023() {
+      margin-bottom: 15px;
+    }
+
+    @include vp-767() {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  h3 {
+    @include font-values(400, 24px, 34px, $color-brand);
+    font-family: $font-secondary;
+    margin: 0;
+    margin-bottom: 15px;
+
+    @include vp-1023() {
+      margin-bottom: 8px;
+    }
+
+    @include vp-767() {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 10px;
+    }
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 15px;
+
+    @include vp-767() {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+
+  @include vp-1023() {
+    min-height: 360px;
+    padding-bottom: 10px;
+
+    &--confidentiality h3,
+    &--personal h3 {
+      margin-bottom: 5px;
+    }
+
+    &--personal svg {
+      margin-bottom: 10px;
+    }
+  }
+
+  @include vp-767() {
+    min-height: 340px;
+    padding: 30px 25px 30px;
+
+    &--confidentiality,
+    &--personal {
+      min-height: 325px;
+    }
+
+    &--confidentiality svg,
+    &--personal svg {
+      margin-bottom: 18px;
+    }
+
+    &--confidentiality h3,
+    &--personal h3 {
+      margin-bottom: 13px;
+    }
+  }
+
+  &:hover {
+    background-color: $color-brand;
+
+    svg {
+      fill: $color-text-secondary;
+    }
+
+    h3,
+    p {
+      color: $color-text-secondary;
+    }
+  }
+}
