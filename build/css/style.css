@@ -1759,6 +1759,7 @@ button,
   bottom: 0;
   right: 0;
   background-color: #00b2ff;
+  border-radius: 3px 0 0 0;
 }
 
 .services__decorate::before,
