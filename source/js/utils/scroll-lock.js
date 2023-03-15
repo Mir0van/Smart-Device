@@ -24,6 +24,8 @@ export class ScrollLock {
     this._scrollTop = document.body.dataset.scroll = document.body.dataset.scroll ? document.body.dataset.scroll : this._getBodyScrollTop();
     if (this._getScrollbarWidth()) {
       document.body.style.paddingRight = `${this._getScrollbarWidth()}px`;
+      // доработка для шапки в position fixed для проекта Smart Device
+      document.querySelector('.main-header').style.width = `calc(100% - ${this._getScrollbarWidth()}px)`;
       this._fixedBlockElements.forEach((block) => {
         block.style.paddingRight = `${this._getScrollbarWidth()}px`;
       });
@@ -37,6 +39,8 @@ export class ScrollLock {
     window.scrollTo(0, +document.body.dataset.scroll);
     document.body.style.paddingRight = null;
     document.body.style.top = null;
+    // доработка для шапки в position fixed для проекта Smart Device
+    document.querySelector('.main-header').style.width = null;
     this._fixedBlockElements.forEach((block) => {
       block.style.paddingRight = null;
     });

@@ -1827,12 +1827,6 @@ button,
   }
 */
 
-@media (min-width: 1024px) {
-  .scroll-lock .main-header {
-    width: calc(100% - 17px);
-  }
-}
-
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) {
   .intro {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/index/intro-background@2x.jpg");
