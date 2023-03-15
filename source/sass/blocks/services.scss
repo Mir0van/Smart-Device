@@ -1,0 +1,295 @@
+.services {
+  background-color: $color-bg-secondary;
+}
+
+.services__wrapper {
+  padding-top: 65px;
+  padding-bottom: 140px;
+
+  @include vp-1023() {
+    padding-top: 56px;
+    padding-bottom: 75px;
+  }
+
+  @include vp-767() {
+    padding-top: 47px;
+    padding-bottom: 86px;
+  }
+
+  h2 {
+    @include font-values(400, 36px, 51px, $color-default-white);
+    font-family: $font-secondary;
+    margin: 0;
+    margin-bottom: 55px;
+
+    @include vp-1023() {
+      margin-bottom: 37px;
+    }
+
+    @include vp-767() {
+      font-size: 28px;
+      line-height: 39px;
+      margin-bottom: 29px;
+    }
+  }
+}
+
+.services__text-mobile {
+  display: none;
+
+  @include vp-767() {
+    display: inline;
+  }
+}
+
+.services__text-desktop {
+  @include vp-767() {
+    display: none;
+  }
+}
+
+.services__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 85px;
+
+  @include vp-1023() {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 30px;
+  }
+}
+
+.services__link {
+  display: block;
+  padding: 27px 40px;
+  min-height: 650px;
+  background-color: $color-brand;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  @include vp-1023() {
+    min-height: 250px;
+    padding: 18px 45px;
+  }
+
+  @include vp-767() {
+    padding: 8px 30px;
+  }
+
+  &--first {
+    background-image: $color-mask-secondary, url("../../img/index/card-background-start.jpg");
+
+    @media (min-width: $vp-1024) {
+      @include retina() {
+        background-image: $color-mask-secondary, url("../../img/index/card-background-start@2x.jpg");
+      }
+    }
+
+    &:hover {
+      background-image: $color-mask-tertiary, url("../../img/index/card-background-start.jpg");
+
+      @media (min-width: $vp-1024) {
+        @include retina() {
+          background-image: $color-mask-tertiary, url("../../img/index/card-background-start@2x.jpg");
+        }
+      }
+    }
+
+    @include vp-1023() {
+      background-image: $color-mask-secondary, url("../../img/index/card-background-start-tablet.jpg");
+
+      @include retina() {
+        background-image: $color-mask-secondary, url("../../img/index/card-background-start-tablet@2x.jpg");
+      }
+
+      &:hover {
+        background-image: $color-mask-tertiary, url("../../img/index/card-background-start-tablet.jpg");
+
+        @include retina() {
+          background-image: $color-mask-tertiary, url("../../img/index/card-background-start-tablet@2x.jpg");
+        }
+      }
+    }
+
+    @include vp-767() {
+      background-image: $color-mask-secondary, url("../../img/index/card-background-start-mobile.jpg");
+
+      @include retina() {
+        background-image: $color-mask-secondary, url("../../img/index/card-background-start-mobile@2x.jpg");
+      }
+
+      &:hover {
+        background-image: $color-mask-tertiary, url("../../img/index/card-background-start-mobile.jpg");
+
+        @include retina() {
+          background-image: $color-mask-tertiary, url("../../img/index/card-background-start-mobile@2x.jpg");
+        }
+      }
+    }
+  }
+
+  &--second {
+    background-image: $color-mask-secondary, url("../../img/index/card-background-center.jpg");
+
+    @media (min-width: $vp-1024) {
+      @include retina() {
+        background-image: $color-mask-secondary, url("../../img/index/card-background-center@2x.jpg");
+      }
+    }
+
+    &:hover {
+      background-image: $color-mask-tertiary, url("../../img/index/card-background-center.jpg");
+
+      @media (min-width: $vp-1024) {
+        @include retina() {
+          background-image: $color-mask-tertiary, url("../../img/index/card-background-center@2x.jpg");
+        }
+      }
+    }
+
+    @include vp-1023() {
+      background-image: $color-mask-secondary, url("../../img/index/card-background-center-tablet.jpg");
+
+      @include retina() {
+        background-image: $color-mask-secondary, url("../../img/index/card-background-center-tablet@2x.jpg");
+      }
+
+      &:hover {
+        background-image: $color-mask-tertiary, url("../../img/index/card-background-center-tablet.jpg");
+
+        @include retina() {
+          background-image: $color-mask-tertiary, url("../../img/index/card-background-center-tablet@2x.jpg");
+        }
+      }
+    }
+
+    @include vp-767() {
+      background-image: $color-mask-secondary, url("../../img/index/card-background-center-mobile.jpg");
+
+      @include retina() {
+        background-image: $color-mask-secondary, url("../../img/index/card-background-center-mobile@2x.jpg");
+      }
+
+      &:hover {
+        background-image: $color-mask-tertiary, url("../../img/index/card-background-center-mobile.jpg");
+
+        @include retina() {
+          background-image: $color-mask-tertiary, url("../../img/index/card-background-center-mobile@2x.jpg");
+        }
+      }
+    }
+  }
+
+  &--third {
+    background-image: $color-mask-secondary, url("../../img/index/card-background-end.jpg");
+
+    @media (min-width: $vp-1024) {
+      @include retina() {
+        background-image: $color-mask-secondary, url("../../img/index/card-background-end@2x.jpg");
+      }
+    }
+
+    &:hover {
+      background-image: $color-mask-tertiary, url("../../img/index/card-background-end.jpg");
+
+      @media (min-width: $vp-1024) {
+        @include retina() {
+          background-image: $color-mask-tertiary, url("../../img/index/card-background-end@2x.jpg");
+        }
+      }
+    }
+
+    @include vp-1023() {
+      background-image: $color-mask-secondary, url("../../img/index/card-background-end-tablet.jpg");
+
+      @include retina() {
+        background-image: $color-mask-secondary, url("../../img/index/card-background-end-tablet@2x.jpg");
+      }
+
+      &:hover {
+        background-image: $color-mask-tertiary, url("../../img/index/card-background-end-tablet.jpg");
+
+        @include retina() {
+          background-image: $color-mask-tertiary, url("../../img/index/card-background-end-tablet@2x.jpg");
+        }
+      }
+    }
+
+    @include vp-767() {
+      background-image: $color-mask-secondary, url("../../img/index/card-background-end-mobile.jpg");
+
+      @include retina() {
+        background-image: $color-mask-secondary, url("../../img/index/card-background-end-mobile@2x.jpg");
+      }
+
+      &:hover {
+        background-image: $color-mask-tertiary, url("../../img/index/card-background-end-mobile.jpg");
+
+        @include retina() {
+          background-image: $color-mask-tertiary, url("../../img/index/card-background-end-mobile@2x.jpg");
+        }
+      }
+    }
+  }
+
+  h3 {
+    @include font-values(400, 20px, 30px, $color-default-white);
+    font-family: $font-secondary;
+    max-width: 165px;
+
+    @include vp-1023() {
+      max-width: 150px;
+    }
+
+    @include vp-767() {
+      font-size: 18px;
+      line-height: 30px;
+      max-width: 135px;
+    }
+  }
+
+  &:hover .services__decorate {
+    opacity: 0.8;
+  }
+}
+
+.services__decorate {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  right: 0;
+  background-color: $color-brand;
+
+  @include vp-767() {
+    width: 40px;
+    height: 40px;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 6px;
+    background-color: $color-default-white;
+    left: 50%;
+  }
+
+  &::before {
+    top: calc(50% + 2px);
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    top: calc(50% - 2px);
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}

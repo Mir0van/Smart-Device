@@ -8,3 +8,11 @@
     position: static;
   }
 }
+
+// Костыль для модалки для ос windows что бы шапка не прыгала при блокировке скрола страницы
+// Для мака вешается другой класс scroll-lock-ios. Вроде все ок, надо потестить на разных устройствах windows
+.scroll-lock .main-header {
+  @media (min-width: $vp-1024) {
+    width: calc(100% - 17px);
+  }
+}

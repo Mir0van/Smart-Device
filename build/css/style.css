@@ -1580,6 +1580,7 @@ button,
 
 .about__wrapper {
   padding-top: 127px;
+  padding-bottom: 100px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 82px 1fr;
@@ -1654,6 +1655,136 @@ button,
   grid-area: button;
 }
 
+.services {
+  background-color: #041827;
+}
+
+.services__wrapper {
+  padding-top: 65px;
+  padding-bottom: 140px;
+}
+
+.services__wrapper h2 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  margin: 0;
+  margin-bottom: 55px;
+}
+
+.services__text-mobile {
+  display: none;
+}
+
+.services__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 85px;
+  -moz-column-gap: 85px;
+  column-gap: 85px;
+}
+
+.services__link {
+  display: block;
+  padding: 27px 40px;
+  min-height: 650px;
+  background-color: #00b2ff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.services__link--first {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-start.jpg");
+  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start.jpg");
+}
+
+.services__link--first:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-start.jpg");
+  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start.jpg");
+}
+
+.services__link--second {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-center.jpg");
+  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center.jpg");
+}
+
+.services__link--second:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-center.jpg");
+  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center.jpg");
+}
+
+.services__link--third {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-end.jpg");
+  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end.jpg");
+}
+
+.services__link--third:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-end.jpg");
+  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end.jpg");
+}
+
+.services__link h3 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  max-width: 165px;
+}
+
+.services__link:hover .services__decorate {
+  opacity: 0.8;
+}
+
+.services__decorate {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  right: 0;
+  background-color: #00b2ff;
+}
+
+.services__decorate::before,
+.services__decorate::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 6px;
+  background-color: #ffffff;
+  left: 50%;
+}
+
+.services__decorate::before {
+  top: calc(50% + 2px);
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.services__decorate::after {
+  top: calc(50% - 2px);
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1695,11 +1826,53 @@ button,
   }
 */
 
+@media (min-width: 1024px) {
+  .scroll-lock .main-header {
+    width: calc(100% - 17px);
+  }
+}
+
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) {
   .intro {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/index/intro-background@2x.jpg");
     background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/index/intro-background@2x.jpg");
     background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/index/intro-background@2x.jpg");
+  }
+
+  .services__link--first {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-start@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start@2x.jpg");
+  }
+
+  .services__link--first:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-start@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start@2x.jpg");
+  }
+
+  .services__link--second {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-center@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center@2x.jpg");
+  }
+
+  .services__link--second:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-center@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center@2x.jpg");
+  }
+
+  .services__link--third {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-end@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end@2x.jpg");
+  }
+
+  .services__link--third:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-end@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end@2x.jpg");
   }
 }
 
@@ -1803,6 +1976,7 @@ button,
 
   .about__wrapper {
     padding-top: 83px;
+    padding-bottom: 80px;
     -webkit-column-gap: 11px;
     -moz-column-gap: 11px;
     column-gap: 11px;
@@ -1821,6 +1995,69 @@ button,
     line-height: 21.5px;
     margin-bottom: 21px;
   }
+
+  .services__wrapper {
+    padding-top: 56px;
+    padding-bottom: 75px;
+  }
+
+  .services__wrapper h2 {
+    margin-bottom: 37px;
+  }
+
+  .services__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+    row-gap: 30px;
+  }
+
+  .services__link {
+    min-height: 250px;
+    padding: 18px 45px;
+  }
+
+  .services__link--first {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-start-tablet.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start-tablet.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start-tablet.jpg");
+  }
+
+  .services__link--first:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-start-tablet.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start-tablet.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start-tablet.jpg");
+  }
+
+  .services__link--second {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-center-tablet.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center-tablet.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center-tablet.jpg");
+  }
+
+  .services__link--second:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-center-tablet.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center-tablet.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center-tablet.jpg");
+  }
+
+  .services__link--third {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-end-tablet.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end-tablet.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end-tablet.jpg");
+  }
+
+  .services__link--third:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-end-tablet.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end-tablet.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end-tablet.jpg");
+  }
+
+  .services__link h3 {
+    max-width: 150px;
+  }
 }
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
@@ -1828,6 +2065,42 @@ button,
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/index/intro-background-tablet@2x.jpg");
     background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/index/intro-background-tablet@2x.jpg");
     background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/index/intro-background-tablet@2x.jpg");
+  }
+
+  .services__link--first {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-start-tablet@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start-tablet@2x.jpg");
+  }
+
+  .services__link--first:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-start-tablet@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start-tablet@2x.jpg");
+  }
+
+  .services__link--second {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-center-tablet@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center-tablet@2x.jpg");
+  }
+
+  .services__link--second:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-center-tablet@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center-tablet@2x.jpg");
+  }
+
+  .services__link--third {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-end-tablet@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end-tablet@2x.jpg");
+  }
+
+  .services__link--third:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-end-tablet@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end-tablet@2x.jpg");
   }
 }
 
@@ -1964,6 +2237,7 @@ button,
 
   .about__wrapper {
     padding-top: 47px;
+    padding-bottom: 78px;
     display: block;
   }
 
@@ -1990,6 +2264,76 @@ button,
   .about__button {
     width: auto;
     padding: 7px 40px 11px;
+  }
+
+  .services__wrapper {
+    padding-top: 47px;
+    padding-bottom: 86px;
+  }
+
+  .services__wrapper h2 {
+    font-size: 28px;
+    line-height: 39px;
+    margin-bottom: 29px;
+  }
+
+  .services__text-mobile {
+    display: inline;
+  }
+
+  .services__text-desktop {
+    display: none;
+  }
+
+  .services__link {
+    padding: 8px 30px;
+  }
+
+  .services__link--first {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-start-mobile.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start-mobile.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start-mobile.jpg");
+  }
+
+  .services__link--first:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-start-mobile.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start-mobile.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start-mobile.jpg");
+  }
+
+  .services__link--second {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-center-mobile.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center-mobile.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center-mobile.jpg");
+  }
+
+  .services__link--second:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-center-mobile.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center-mobile.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center-mobile.jpg");
+  }
+
+  .services__link--third {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-end-mobile.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end-mobile.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end-mobile.jpg");
+  }
+
+  .services__link--third:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-end-mobile.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end-mobile.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end-mobile.jpg");
+  }
+
+  .services__link h3 {
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 135px;
+  }
+
+  .services__decorate {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -2062,6 +2406,42 @@ button,
     background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/index/intro-background-mobile@2x.jpg");
     background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/index/intro-background-mobile@2x.jpg");
   }
+
+  .services__link--first {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-start-mobile@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start-mobile@2x.jpg");
+  }
+
+  .services__link--first:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-start-mobile@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start-mobile@2x.jpg");
+  }
+
+  .services__link--second {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-center-mobile@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center-mobile@2x.jpg");
+  }
+
+  .services__link--second:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-center-mobile@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center-mobile@2x.jpg");
+  }
+
+  .services__link--third {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-end-mobile@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end-mobile@2x.jpg");
+  }
+
+  .services__link--third:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-end-mobile@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end-mobile@2x.jpg");
+  }
 }
 
 @media (hover: hover) {
@@ -2075,5 +2455,11 @@ button,
 
   .custom-select__item:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .about__wrapper > span {
+    background-image: url("../../img/index/year-mask@2x.jpg");
   }
 }

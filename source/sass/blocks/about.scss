@@ -1,5 +1,6 @@
 .about__wrapper {
   padding-top: 127px;
+  padding-bottom: 100px;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto auto 1fr;
@@ -11,11 +12,13 @@
 
   @include vp-1023() {
     padding-top: 83px;
+    padding-bottom: 80px;
     column-gap: 11px;
   }
 
   @include vp-767() {
     padding-top: 47px;
+    padding-bottom: 78px;
     display: block;
   }
 
@@ -34,6 +37,10 @@
     align-self: start;
     margin-left: 12px;
     margin-top: -3px;
+
+    @include retina() {
+      background-image: url("../../img/index/year-mask@2x.jpg");
+    }
 
     @include vp-1023() {
       margin-left: 8px;
