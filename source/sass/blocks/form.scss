@@ -1,0 +1,133 @@
+.form {
+  padding-right: 10px;
+  display: grid;
+  gap: 20px 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "name tel"
+    "textarea textarea"
+    "button checkbox";
+
+  input,
+  textarea {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  @include vp-1023() {
+    padding-right: 0;
+  }
+
+  @include vp-767() {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "name"
+      "tel"
+      "textarea"
+      "button"
+      "checkbox";
+  }
+}
+
+.form__input-text,
+.form__input-tel,
+.form__input-textarea {
+  input,
+  textarea {
+    @include font-values(400, 16px, 22px, $color-default-white);
+    height: 50px;
+    width: 100%;
+    padding: 15px;
+    background-color: $color-brand-tertiary;
+    border-radius: 3px;
+
+    &::placeholder {
+      @include font-values(400, 16px, 22px, $color-default-white);
+    }
+  }
+
+  input:hover,
+  input:active,
+  textarea:hover,
+  textarea:active {
+    background-color: lighten($color-brand-tertiary, 10%);
+  }
+
+  input:focus-visible,
+  textarea:focus-visible {
+    outline: 1px solid $color-default-white;;
+    background-color: $color-brand-tertiary;
+  }
+}
+
+
+.form__input-text {
+  grid-area: name;
+}
+
+.form__input-tel {
+  grid-area: tel;
+}
+
+.form__input-textarea {
+  grid-area: textarea;
+  margin-bottom: 15px;
+
+  @include vp-767() {
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    height: 155px;
+    padding-top: 23px;
+    display: block;
+
+    @include vp-1023() {
+      padding-top: 30px;
+    }
+
+    @include vp-767() {
+      padding-top: 23px;
+      height: 180px;
+    }
+  }
+}
+
+.form__button {
+  grid-area: button;
+  width: 96.3%;
+
+  @include vp-1023() {
+    width: 83%;
+  }
+
+  @include vp-767() {
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    margin-bottom: 4px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.form__checkbox {
+  grid-area: checkbox;
+  align-self: end;
+  justify-self: end;
+  padding-left: 10px;
+
+  @include vp-1023() {
+    padding-left: 0;
+    align-self: center;
+    margin-bottom: -5px;
+  }
+
+  @include vp-767() {
+    justify-self: start;
+    align-self: start;
+    margin-bottom: 0;
+    padding-left: 5px;
+  }
+}

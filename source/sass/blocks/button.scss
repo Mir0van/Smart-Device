@@ -63,4 +63,18 @@
       color: $color-text-secondary;
     }
   }
+
+  &--quaternary {
+    padding: 15px 27px 11px;
+    @include font-values(700, 16px, 19px, $color-default-white);
+    background-color: $color-text-tertiary;
+
+    &:hover {
+      background-color: rgba($color-text-tertiary, 90%);
+    }
+
+    &:active {
+      background-color: rgba($color-text-tertiary, 70%);
+    }
+  }
 }

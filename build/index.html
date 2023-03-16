@@ -127,6 +127,37 @@
             </ul>
           </div>
         </section>
+        <section class="question">
+          <div class="question__wrapper container">
+            <div class="question__image-wrapper">
+              <picture>
+                <source type="image/webp" srcset="./img/index/plane.webp 1x, ./img/index/plane@2x.webp 2x">
+                <img src="./img/index/plane.png" srcset="./img/index/plane@2x.png 2x" loading="lazy" width="510" height="285" alt="Самолетик.">
+              </picture>
+            </div>
+            <div class="question__form-wrapper">
+              <h2>Остались вопросы? Задайте&nbsp;их&nbsp;нам!</h2>
+              <p>Мы проконсультируем Вас бесплатно</p>
+              <form class="question__form form" action="https://echo.htmlacademy.ru/" method="get">
+                <div class="form__input-text">
+                  <input type="text" name="name" placeholder="Имя" required>
+                </div>
+                <div class="form__input-tel">
+                  <input type="tel" name="tel" placeholder="Телефон" required>
+                </div>
+                <div class="form__input-textarea">
+                  <textarea name="question" placeholder="Ваш вопрос"></textarea>
+                </div>
+                <label class="form__checkbox checkbox">
+                  <input class="visually-hidden" type="checkbox" name="agree-with-politicy" value="agree" required>
+                  <span class="checkbox__control-mark"></span>
+                  <span class="checkbox__control-description">Я согласен на обработку персональных данных</span>
+                </label>
+                <button class="form__button button button--quaternary" type="submit">Задать вопрос</button>
+              </form>
+            </div>
+          </div>
+        </section>
       </main>
       <footer>
         <div class="container"></div>
