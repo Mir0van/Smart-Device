@@ -688,7 +688,7 @@ button,
   flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(3, 16, 27, 0.7);
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
@@ -744,8 +744,8 @@ button,
 
 .modal__close-btn {
   position: absolute;
-  top: 22px;
-  right: 22px;
+  top: 15px;
+  right: 15px;
   z-index: 1;
   width: 40px;
   height: 40px;
@@ -1677,6 +1677,11 @@ button,
   -ms-grid-column: 1;
 }
 
+.modal-form .form > .about__button {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+}
+
 .services {
   background-color: #041827;
 }
@@ -1988,10 +1993,20 @@ button,
   grid-area: name;
 }
 
+.modal-form .form > .form__input-text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
 .form__input-tel {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: tel;
+}
+
+.modal-form .form > .form__input-tel {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
 }
 
 .form__input-textarea {
@@ -2000,6 +2015,12 @@ button,
   -ms-grid-column-span: 3;
   grid-area: textarea;
   margin-bottom: 15px;
+}
+
+.modal-form .form > .form__input-textarea {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
 }
 
 .form__input-textarea textarea {
@@ -2020,6 +2041,11 @@ button,
   -ms-grid-column: 1;
 }
 
+.modal-form .form > .form__button {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+}
+
 .form__checkbox {
   -ms-grid-row: 5;
   -ms-grid-column: 3;
@@ -2029,6 +2055,11 @@ button,
   -ms-grid-column-align: end;
   justify-self: end;
   padding-left: 10px;
+}
+
+.modal-form .form > .form__checkbox {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
 }
 
 .checkbox {
@@ -2100,6 +2131,77 @@ button,
   font-size: 14px;
   line-height: 16px;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.modal-form {
+  padding-top: 37px;
+  padding-bottom: 44px;
+  width: 500px;
+  background-color: #00b2ff;
+}
+
+.modal-form > h2 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.modal-form > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.modal-form .form {
+  padding: 0;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "name" "tel" "textarea" "button" "checkbox";
+}
+
+.modal-form .form__input-textarea {
+  margin-bottom: 5px;
+}
+
+.modal-form .form__input-textarea textarea {
+  padding-top: 23px;
+  height: 155px;
+}
+
+.modal-form .form__button {
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.modal-form .form__checkbox {
+  -ms-grid-column-align: start;
+  justify-self: start;
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
+  margin-bottom: 0;
+}
+
+.modal-form__close-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 /* @mixin hover-focus {

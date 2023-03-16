@@ -1,0 +1,59 @@
+.modal-form {
+  padding-top: 37px;
+  padding-bottom: 44px;
+  width: 500px;
+  background-color: $color-brand;
+
+  & > h2 {
+    @include font-values(400, 30px, 42px, $color-default-white);
+    font-family: $font-secondary;
+    margin: 0;
+    margin-bottom: 4px;
+  }
+
+  & > p {
+    @include font-values(400, 16px, 22px, $color-default-white);
+    margin: 0;
+    margin-bottom: 38px;
+  }
+
+  .form {
+    padding: 0;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "name"
+      "tel"
+      "textarea"
+      "button"
+      "checkbox";
+  }
+
+  .form__input-textarea {
+    margin-bottom: 5px;
+
+    textarea {
+      padding-top: 23px;
+      height: 155px;
+    }
+  }
+
+  .form__button {
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .form__checkbox {
+    justify-self: start;
+    align-self: start;
+    margin-bottom: 0;
+  }
+}
+
+.modal-form__close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

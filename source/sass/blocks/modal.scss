@@ -11,7 +11,7 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  background-color: rgba($color-default-black, 0.8);
+  background-color: $color-mask-quinary;
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
@@ -72,8 +72,8 @@
 
   &__close-btn {
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: 15px;
+    right: 15px;
     z-index: 1;
 
     width: 40px;

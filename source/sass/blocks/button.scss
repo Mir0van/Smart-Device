@@ -66,6 +66,7 @@
 
   &--quaternary {
     padding: 15px 27px 11px;
+
     @include font-values(700, 16px, 19px, $color-default-white);
     background-color: $color-text-tertiary;
 
