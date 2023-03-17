@@ -2,6 +2,8 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {activateAccordion} from './accordion.js';
+import {activateShowMore} from './show-more.js';
+import {activateTelMask} from './phone-mask.js';
 
 // ---------------------------------
 
@@ -23,6 +25,8 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     activateAccordion();
+    activateShowMore();
+    activateTelMask();
   });
 });
 

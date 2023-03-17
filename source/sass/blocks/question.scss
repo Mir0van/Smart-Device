@@ -1,6 +1,11 @@
 .question {
   background-color: $color-brand;
   position: relative;
+  scroll-margin-top: 120px;
+
+  @include vp-1023() {
+    scroll-margin-top: 0;
+  }
 
   &::before {
     position: absolute;

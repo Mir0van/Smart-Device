@@ -65,7 +65,11 @@ export class FocusLock {
       this._endElement.blur();
     }
     if (startElement && startFocus) {
-      startElement.focus();
+      // startElement.focus();
+      // фокус на имя
+      setTimeout(() => {
+        startElement.focus();
+      }, 100);
     }
     document.addEventListener('keydown', this._documentKeydownHandler);
   }

@@ -1662,6 +1662,13 @@ button,
   margin-bottom: 20px;
 }
 
+.about__additional-text {
+  overflow: hidden;
+  -webkit-transition: height 0.3s ease;
+  -o-transition: height 0.3s ease;
+  transition: height 0.3s ease;
+}
+
 .about__button {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
@@ -1817,6 +1824,7 @@ button,
 .question {
   background-color: #00b2ff;
   position: relative;
+  scroll-margin-top: 120px;
 }
 
 .question::before {
@@ -2640,6 +2648,10 @@ button,
 
   .services__link h3 {
     max-width: 150px;
+  }
+
+  .question {
+    scroll-margin-top: 0;
   }
 
   .question::before {
