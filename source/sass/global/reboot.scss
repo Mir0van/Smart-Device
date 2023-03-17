@@ -22,6 +22,7 @@ html {
   // my styles for the project Smart Device
   font-family: $font-main;
   color: $color-text;
+  scroll-behavior: smooth;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
