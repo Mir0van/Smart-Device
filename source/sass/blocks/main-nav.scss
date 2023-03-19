@@ -3,7 +3,7 @@
   grid-template-columns: 215px 1fr 224px;
   padding-top: 27px;
   padding-bottom: 38px;
-  align-items: center;
+  align-items: start;
 
   @include vp-1023() {
     grid-template-columns: 215px 1fr;
@@ -20,6 +20,7 @@
 
 .main-nav__logo-wrapper {
   transform: translateY(3px);
+  // align-items: start;
 
   @include vp-1023() {
     transform: translateY(8px);
@@ -54,18 +55,25 @@
   padding: 0;
   list-style-type: none;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
-  column-gap: 102px;
+  column-gap: 101px;
+  justify-self: center;
+  width: 480px;
+  margin-top: 7px;
 
   @include vp-1023() {
     justify-content: end;
+    justify-self: end;
     column-gap: 20px;
     margin-right: 20px;
+    width: auto;
+    margin-left: 10px;
   }
 
   @include vp-767() {
     margin-right: 10px;
+    margin-left: 15px;
   }
 }
 
@@ -81,6 +89,7 @@
     display: block;
     width: 20px;
     height: 20px;
+    flex-shrink: 0;
   }
 
   &--mail {
@@ -114,8 +123,10 @@
   @include font-values($color: $color-text-secondary);
   justify-self: start;
   margin-left: 4px;
+  margin-top: 8px;
 
   @include vp-1023() {
     display: none;
+    margin-top: 0;
   }
 }

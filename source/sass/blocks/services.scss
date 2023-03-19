@@ -55,6 +55,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 85px;
+  row-gap: 65px;
 
   @include vp-1023() {
     grid-template-columns: 1fr;
