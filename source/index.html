@@ -138,23 +138,33 @@
             <div class="question__form-wrapper">
               <h2>Остались вопросы? Задайте&nbsp;их&nbsp;нам!</h2>
               <p>Мы проконсультируем Вас бесплатно</p>
-              <form class="question__form form" action="https://echo.htmlacademy.ru/" method="get">
-                <div class="form__input-text">
-                  <input type="text" name="name" placeholder="Имя" required>
-                </div>
-                <div class="form__input-tel">
-                  <input type="tel" name="tel" placeholder="Телефон" required>
-                </div>
-                <div class="form__input-textarea">
-                  <textarea name="question" placeholder="Ваш вопрос"></textarea>
-                </div>
-                <label class="form__checkbox checkbox">
-                  <input class="visually-hidden" type="checkbox" name="agree-with-politicy" value="agree" required>
-                  <span class="checkbox__control-mark"></span>
-                  <span class="checkbox__control-description">Я согласен на обработку персональных данных</span>
-                </label>
-                <button class="form__button button button--quaternary" type="submit">Задать вопрос</button>
-              </form>
+              <div class="question__form form">
+                <form action="https://echo.htmlacademy.ru/" method="get">
+                  <div class="form__input-text">
+                    <label>
+                      <input type="text" name="name" placeholder="Имя" required>
+                    </label>
+                  </div>
+                  <div class="form__input-tel">
+                    <label>
+                      <input type="tel" name="tel" placeholder="Телефон" required>
+                    </label>
+                  </div>
+                  <div class="form__input-textarea">
+                    <label>
+                      <textarea name="question" placeholder="Ваш вопрос"></textarea>
+                    </label>
+                  </div>
+                  <div class="form__checkbox checkbox">
+                    <label>
+                      <input class="visually-hidden" type="checkbox" name="agree-with-politicy" value="agree" required>
+                      <span class="checkbox__control-mark"></span>
+                      <span class="checkbox__control-description">Я согласен на обработку персональных данных</span>
+                    </label>
+                  </div>
+                  <button class="form__button button button--quaternary" type="submit">Задать вопрос</button>
+                </form>
+              </div>
             </div>
           </div>
         </section>
@@ -250,31 +260,40 @@
         </div>
       </footer>
     </div>
-
-    <!-- Модалки -->
+    <!-- Модалка -->
     <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content modal-form">
           <h2>Закажите звонок</h2>
           <p>Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
-          <form class="form" action="https://echo.htmlacademy.ru/" method="get">
-            <div class="form__input-text">
-              <input type="text" name="name" placeholder="Имя" required data-focus autofocus>
-            </div>
-            <div class="form__input-tel">
-              <input type="tel" name="tel" placeholder="Телефон" required>
-            </div>
-            <div class="form__input-textarea">
-              <textarea name="question" placeholder="Ваш вопрос"></textarea>
-            </div>
-            <label class="form__checkbox checkbox">
-              <input class="visually-hidden" type="checkbox" name="agree-with-politicy" value="agree" required>
-              <span class="checkbox__control-mark"></span>
-              <span class="checkbox__control-description">Я согласен на обработку персональных данных</span>
-            </label>
-            <button class="form__button button button--quaternary" type="submit">Отправить</button>
-          </form>
+          <div class="modal-form__wrapper">
+            <form action="https://echo.htmlacademy.ru/" method="get">
+              <div class="form__input-text">
+                <label>
+                  <input type="text" name="name" placeholder="Имя" required>
+                </label>
+              </div>
+              <div class="form__input-tel">
+                <label>
+                  <input type="tel" name="tel" placeholder="Телефон" required>
+                </label>
+              </div>
+              <div class="form__input-textarea">
+                <label>
+                  <textarea name="question" placeholder="Ваш вопрос"></textarea>
+                </label>
+              </div>
+              <div class="form__checkbox checkbox">
+                <label>
+                  <input class="visually-hidden" type="checkbox" name="agree-with-politicy" value="agree" required>
+                  <span class="checkbox__control-mark"></span>
+                  <span class="checkbox__control-description">Я согласен на обработку&nbsp; персональных данных</span>
+                </label>
+              </div>
+              <button class="form__button button button--quaternary" type="submit">Отправить</button>
+            </form>
+          </div>
           <button class="modal__close-btn btn-reset modal-form__close-button" type="button" aria-label="Закрыть попап" data-close-modal>
             <svg width="20" height="20" fill="white" xmlns="http://www.w3.org/2000/svg">
               <use href="./img/sprite.svg#icon-close"></use>
@@ -283,21 +302,6 @@
         </div>
       </div>
     </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

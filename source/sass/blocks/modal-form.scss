@@ -16,9 +16,12 @@
     margin: 0;
     margin-bottom: 38px;
   }
+}
 
-  .form {
-    padding: 0;
+.modal-form__wrapper {
+  form {
+    display: grid;
+    gap: 20px 0;
     grid-template-columns: 1fr;
     grid-template-areas:
       "name"
@@ -28,16 +31,56 @@
       "checkbox";
   }
 
-  .form__input-textarea {
-    margin-bottom: 5px;
+  input:not(input[type="checkbox"]),
+  textarea {
+    @include font-values(400, 16px, 22px, $color-default-white);
+    height: 50px;
+    width: 100%;
+    padding: 15px;
+    background-color: $color-brand-tertiary;
+    border-radius: 3px;
+    border: none;
 
-    textarea {
-      padding-top: 23px;
-      height: 155px;
+    &::placeholder {
+      @include font-values(400, 16px, 22px, $color-default-white);
     }
   }
 
+  textarea {
+    height: 155px;
+    display: block;
+    padding-top: 23px;
+    height: 155px;
+  }
+
+  input:hover,
+  input:active,
+  textarea:hover,
+  textarea:active {
+    background-color: lighten($color-brand-tertiary, 10%);
+  }
+
+  input:focus-visible,
+  textarea:focus-visible {
+    outline: 1px solid $color-default-white;
+    background-color: $color-brand-tertiary;
+  }
+
+  .form__input-text {
+    grid-area: name;
+  }
+
+  .form__input-tel {
+    grid-area: tel;
+  }
+
+  .form__input-textarea {
+    grid-area: textarea;
+    margin-bottom: 5px;
+  }
+
   .form__button {
+    grid-area: button;
     width: 100%;
     padding-top: 14px;
     padding-bottom: 12px;
@@ -46,9 +89,11 @@
   }
 
   .form__checkbox {
+    grid-area: checkbox;
     justify-self: start;
     align-self: start;
     margin-bottom: 0;
+    padding-left: 9px;
   }
 }
 

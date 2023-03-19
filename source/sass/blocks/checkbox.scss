@@ -1,8 +1,22 @@
 .checkbox {
-  display: flex;
-  gap: 0 11px;
-  align-items: center;
-  cursor: pointer;
+  label {
+    display: flex;
+    gap: 0 11px;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover .checkbox__control-description,
+    &:hover .checkbox__control-mark {
+      color: rgba($color-default-white, 70%);
+      border-color: rgba($color-default-white, 70%);
+    }
+
+    &:active .checkbox__control-description,
+    &:active .checkbox__control-mark {
+      color: rgba($color-default-white, 60%);
+      border-color: rgba($color-default-white, 60%);
+    }
+  }
 
   input[type="checkbox"]:checked + .checkbox__control-mark::before,
   input[type="checkbox"]:checked + .checkbox__control-mark::after {
@@ -29,18 +43,6 @@
   input[type="checkbox"]:focus-visible + .checkbox__control-mark {
     outline: 1px solid $color-default-white;
     outline-offset: 2px;
-  }
-
-  &:hover .checkbox__control-description,
-  &:hover .checkbox__control-mark {
-    color: rgba($color-default-white, 70%);
-    border-color: rgba($color-default-white, 70%);
-  }
-
-  &:active .checkbox__control-description,
-  &:active .checkbox__control-mark {
-    color: rgba($color-default-white, 60%);
-    border-color: rgba($color-default-white, 60%);
   }
 }
 

@@ -1687,13 +1687,13 @@ button,
   grid-area: button;
 }
 
-.form > .about__button {
+.form form > .about__button {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
 }
 
-.modal-form .form > .about__button {
-  -ms-grid-row: 4;
+.modal-form__wrapper form > .about__button {
+  -ms-grid-row: 7;
   -ms-grid-column: 1;
 }
 
@@ -1884,7 +1884,7 @@ button,
   margin-bottom: 35px;
 }
 
-.form {
+.form form {
   padding-right: 10px;
   display: -ms-grid;
   display: grid;
@@ -1895,19 +1895,8 @@ button,
   grid-template-areas: "name tel" "textarea textarea" "button checkbox";
 }
 
-.form input,
+.form input:not(input[type=checkbox]),
 .form textarea {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-.form__input-text input,
-.form__input-text textarea,
-.form__input-tel input,
-.form__input-tel textarea,
-.form__input-textarea input,
-.form__input-textarea textarea {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1917,89 +1906,64 @@ button,
   padding: 15px;
   background-color: rgba(4, 20, 39, 0.1490196078);
   border-radius: 3px;
+  border: none;
 }
 
-.form__input-text input::-webkit-input-placeholder,
-.form__input-text textarea::-webkit-input-placeholder,
-.form__input-tel input::-webkit-input-placeholder,
-.form__input-tel textarea::-webkit-input-placeholder,
-.form__input-textarea input::-webkit-input-placeholder,
-.form__input-textarea textarea::-webkit-input-placeholder {
+.form input:not(input[type=checkbox])::-webkit-input-placeholder,
+.form textarea::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
 }
 
-.form__input-text input::-moz-placeholder,
-.form__input-text textarea::-moz-placeholder,
-.form__input-tel input::-moz-placeholder,
-.form__input-tel textarea::-moz-placeholder,
-.form__input-textarea input::-moz-placeholder,
-.form__input-textarea textarea::-moz-placeholder {
+.form input:not(input[type=checkbox])::-moz-placeholder,
+.form textarea::-moz-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
 }
 
-.form__input-text input:-ms-input-placeholder,
-.form__input-text textarea:-ms-input-placeholder,
-.form__input-tel input:-ms-input-placeholder,
-.form__input-tel textarea:-ms-input-placeholder,
-.form__input-textarea input:-ms-input-placeholder,
-.form__input-textarea textarea:-ms-input-placeholder {
+.form input:not(input[type=checkbox]):-ms-input-placeholder,
+.form textarea:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
 }
 
-.form__input-text input::-ms-input-placeholder,
-.form__input-text textarea::-ms-input-placeholder,
-.form__input-tel input::-ms-input-placeholder,
-.form__input-tel textarea::-ms-input-placeholder,
-.form__input-textarea input::-ms-input-placeholder,
-.form__input-textarea textarea::-ms-input-placeholder {
+.form input:not(input[type=checkbox])::-ms-input-placeholder,
+.form textarea::-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
 }
 
-.form__input-text input::placeholder,
-.form__input-text textarea::placeholder,
-.form__input-tel input::placeholder,
-.form__input-tel textarea::placeholder,
-.form__input-textarea input::placeholder,
-.form__input-textarea textarea::placeholder {
+.form input:not(input[type=checkbox])::placeholder,
+.form textarea::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
 }
 
-.form__input-text input:hover,
-.form__input-text input:active,
-.form__input-text textarea:hover,
-.form__input-text textarea:active,
-.form__input-tel input:hover,
-.form__input-tel input:active,
-.form__input-tel textarea:hover,
-.form__input-tel textarea:active,
-.form__input-textarea input:hover,
-.form__input-textarea input:active,
-.form__input-textarea textarea:hover,
-.form__input-textarea textarea:active {
+.form textarea {
+  height: 155px;
+  padding-top: 23px;
+  display: block;
+}
+
+.form input:hover,
+.form input:active,
+.form textarea:hover,
+.form textarea:active {
   background-color: rgba(9, 44, 85, 0.1490196078);
 }
 
-.form__input-text input:focus-visible,
-.form__input-text textarea:focus-visible,
-.form__input-tel input:focus-visible,
-.form__input-tel textarea:focus-visible,
-.form__input-textarea input:focus-visible,
-.form__input-textarea textarea:focus-visible {
+.form input:focus-visible,
+.form textarea:focus-visible {
   outline: 1px solid #ffffff;
   background-color: rgba(4, 20, 39, 0.1490196078);
 }
@@ -2010,7 +1974,7 @@ button,
   grid-area: name;
 }
 
-.modal-form .form > .form__input-text {
+.modal-form__wrapper form > .form__input-text {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
 }
@@ -2021,8 +1985,8 @@ button,
   grid-area: tel;
 }
 
-.modal-form .form > .form__input-tel {
-  -ms-grid-row: 2;
+.modal-form__wrapper form > .form__input-tel {
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
 }
 
@@ -2034,16 +1998,10 @@ button,
   margin-bottom: 15px;
 }
 
-.modal-form .form > .form__input-textarea {
-  -ms-grid-row: 3;
+.modal-form__wrapper form > .form__input-textarea {
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
-}
-
-.form__input-textarea textarea {
-  height: 155px;
-  padding-top: 23px;
-  display: block;
 }
 
 .form__button {
@@ -2053,13 +2011,13 @@ button,
   width: 96.3%;
 }
 
-.form > .form__button {
+.form form > .form__button {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
 }
 
-.modal-form .form > .form__button {
-  -ms-grid-row: 4;
+.modal-form__wrapper form > .form__button {
+  -ms-grid-row: 7;
   -ms-grid-column: 1;
 }
 
@@ -2074,12 +2032,12 @@ button,
   padding-left: 10px;
 }
 
-.modal-form .form > .form__checkbox {
-  -ms-grid-row: 5;
+.modal-form__wrapper form > .form__checkbox {
+  -ms-grid-row: 9;
   -ms-grid-column: 1;
 }
 
-.checkbox {
+.checkbox label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2088,6 +2046,18 @@ button,
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
+}
+
+.checkbox label:hover .checkbox__control-description,
+.checkbox label:hover .checkbox__control-mark {
+  color: rgba(255, 255, 255, 0.7);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.checkbox label:active .checkbox__control-description,
+.checkbox label:active .checkbox__control-mark {
+  color: rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.6);
 }
 
 .checkbox input[type=checkbox]:checked + .checkbox__control-mark::before,
@@ -2119,18 +2089,6 @@ button,
 .checkbox input[type=checkbox]:focus-visible + .checkbox__control-mark {
   outline: 1px solid #ffffff;
   outline-offset: 2px;
-}
-
-.checkbox:hover .checkbox__control-description,
-.checkbox:hover .checkbox__control-mark {
-  color: rgba(255, 255, 255, 0.7);
-  border-color: rgba(255, 255, 255, 0.7);
-}
-
-.checkbox:active .checkbox__control-description,
-.checkbox:active .checkbox__control-mark {
-  color: rgba(255, 255, 255, 0.6);
-  border-color: rgba(255, 255, 255, 0.6);
 }
 
 .checkbox__control-mark {
@@ -2176,23 +2134,114 @@ button,
   margin-bottom: 38px;
 }
 
-.modal-form .form {
-  padding: 0;
+.modal-form__wrapper form {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px 0;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
+  -ms-grid-rows: auto 20px auto 20px auto 20px auto 20px auto;
   grid-template-areas: "name" "tel" "textarea" "button" "checkbox";
 }
 
-.modal-form .form__input-textarea {
-  margin-bottom: 5px;
+.modal-form__wrapper input:not(input[type=checkbox]),
+.modal-form__wrapper textarea {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  height: 50px;
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(4, 20, 39, 0.1490196078);
+  border-radius: 3px;
+  border: none;
 }
 
-.modal-form .form__input-textarea textarea {
+.modal-form__wrapper input:not(input[type=checkbox])::-webkit-input-placeholder,
+.modal-form__wrapper textarea::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.modal-form__wrapper input:not(input[type=checkbox])::-moz-placeholder,
+.modal-form__wrapper textarea::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.modal-form__wrapper input:not(input[type=checkbox]):-ms-input-placeholder,
+.modal-form__wrapper textarea:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.modal-form__wrapper input:not(input[type=checkbox])::-ms-input-placeholder,
+.modal-form__wrapper textarea::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.modal-form__wrapper input:not(input[type=checkbox])::placeholder,
+.modal-form__wrapper textarea::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.modal-form__wrapper textarea {
+  height: 155px;
+  display: block;
   padding-top: 23px;
   height: 155px;
 }
 
-.modal-form .form__button {
+.modal-form__wrapper input:hover,
+.modal-form__wrapper input:active,
+.modal-form__wrapper textarea:hover,
+.modal-form__wrapper textarea:active {
+  background-color: rgba(9, 44, 85, 0.1490196078);
+}
+
+.modal-form__wrapper input:focus-visible,
+.modal-form__wrapper textarea:focus-visible {
+  outline: 1px solid #ffffff;
+  background-color: rgba(4, 20, 39, 0.1490196078);
+}
+
+.modal-form__wrapper .form__input-text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: name;
+}
+
+.modal-form__wrapper .form__input-tel {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: tel;
+}
+
+.modal-form__wrapper .form__input-textarea {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: textarea;
+  margin-bottom: 5px;
+}
+
+.modal-form__wrapper .form__button {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: button;
   width: 100%;
   padding-top: 14px;
   padding-bottom: 12px;
@@ -2200,13 +2249,16 @@ button,
   line-height: 19px;
 }
 
-.modal-form .form__checkbox {
+.modal-form__wrapper .form__checkbox {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: checkbox;
   -ms-grid-column-align: start;
   justify-self: start;
-  -ms-flex-item-align: start;
   -ms-grid-row-align: start;
   align-self: start;
   margin-bottom: 0;
+  padding-left: 9px;
 }
 
 .modal-form__close-button {
@@ -2691,11 +2743,11 @@ button,
     margin-bottom: 24px;
   }
 
-  .form {
+  .form form {
     padding-right: 0;
   }
 
-  .form__input-textarea textarea {
+  .form textarea {
     padding-top: 30px;
   }
 
@@ -2868,6 +2920,7 @@ button,
   .main-nav__list {
     margin-right: 10px;
     margin-left: 15px;
+    margin-top: 0;
   }
 
   .button {
@@ -3078,24 +3131,24 @@ button,
     margin-bottom: 34px;
   }
 
-  .form {
+  .form form {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     grid-template-areas: "name" "tel" "textarea" "button" "checkbox";
   }
 
-  .form > .about__button {
+  .form form > .about__button {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
   }
 
-  .form__input-textarea {
-    margin-bottom: 10px;
-  }
-
-  .form__input-textarea textarea {
+  .form textarea {
     padding-top: 23px;
     height: 180px;
+  }
+
+  .form__input-textarea {
+    margin-bottom: 10px;
   }
 
   .form__button {
@@ -3105,6 +3158,16 @@ button,
     margin-bottom: 4px;
     font-size: 16px;
     line-height: 19px;
+  }
+
+  .form__checkbox {
+    -ms-grid-column-align: start;
+    justify-self: start;
+    -ms-flex-item-align: start;
+    -ms-grid-row-align: start;
+    align-self: start;
+    margin-bottom: 0;
+    padding-left: 5px;
   }
 
   .form__input-text {
@@ -3123,7 +3186,7 @@ button,
     -ms-grid-column-span: 1;
   }
 
-  .form > .form__button {
+  .form form > .form__button {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
   }
@@ -3133,14 +3196,30 @@ button,
     -ms-grid-column: 1;
   }
 
-  .form__checkbox {
-    -ms-grid-column-align: start;
-    justify-self: start;
-    -ms-flex-item-align: start;
-    -ms-grid-row-align: start;
-    align-self: start;
-    margin-bottom: 0;
-    padding-left: 5px;
+  .modal-form__wrapper .form__input-text {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .modal-form__wrapper .form__input-tel {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .modal-form__wrapper .form__input-textarea {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+  .form form > .form__button {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+
+  .modal-form__wrapper .form__checkbox {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
   }
 
   .main-footer__wrapper {
