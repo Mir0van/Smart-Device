@@ -54,7 +54,7 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 85px;
+  column-gap: 7%;
   row-gap: 65px;
 
   @include vp-1023() {
@@ -68,6 +68,7 @@
   display: block;
   padding: 27px 40px;
   min-height: 650px;
+  height: 100%;
   background-color: $color-brand;
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,6 +78,7 @@
   @include vp-1023() {
     min-height: 250px;
     padding: 18px 45px;
+    height: auto;
   }
 
   @include vp-767() {
@@ -84,156 +86,156 @@
   }
 
   &--first {
-    background-image: $color-mask-secondary, url("../../img/index/card-background-start.jpg");
+    background-image: $color-mask-secondary, url("../img/index/card-background-start.jpg");
 
     @media (min-width: $vp-1024) {
       @include retina() {
-        background-image: $color-mask-secondary, url("../../img/index/card-background-start@2x.jpg");
+        background-image: $color-mask-secondary, url("../img/index/card-background-start@2x.jpg");
       }
     }
 
     &:hover {
-      background-image: $color-mask-tertiary, url("../../img/index/card-background-start.jpg");
+      background-image: $color-mask-tertiary, url("../img/index/card-background-start.jpg");
 
       @media (min-width: $vp-1024) {
         @include retina() {
-          background-image: $color-mask-tertiary, url("../../img/index/card-background-start@2x.jpg");
+          background-image: $color-mask-tertiary, url("../img/index/card-background-start@2x.jpg");
         }
       }
     }
 
     @include vp-1023() {
-      background-image: $color-mask-secondary, url("../../img/index/card-background-start-tablet.jpg");
+      background-image: $color-mask-secondary, url("../img/index/card-background-start-tablet.jpg");
 
       @include retina() {
-        background-image: $color-mask-secondary, url("../../img/index/card-background-start-tablet@2x.jpg");
+        background-image: $color-mask-secondary, url("../img/index/card-background-start-tablet@2x.jpg");
       }
 
       &:hover {
-        background-image: $color-mask-tertiary, url("../../img/index/card-background-start-tablet.jpg");
+        background-image: $color-mask-tertiary, url("../img/index/card-background-start-tablet.jpg");
 
         @include retina() {
-          background-image: $color-mask-tertiary, url("../../img/index/card-background-start-tablet@2x.jpg");
+          background-image: $color-mask-tertiary, url("../img/index/card-background-start-tablet@2x.jpg");
         }
       }
     }
 
     @include vp-767() {
-      background-image: $color-mask-secondary, url("../../img/index/card-background-start-mobile.jpg");
+      background-image: $color-mask-secondary, url("../img/index/card-background-start-mobile.jpg");
 
       @include retina() {
-        background-image: $color-mask-secondary, url("../../img/index/card-background-start-mobile@2x.jpg");
+        background-image: $color-mask-secondary, url("../img/index/card-background-start-mobile@2x.jpg");
       }
 
       &:hover {
-        background-image: $color-mask-tertiary, url("../../img/index/card-background-start-mobile.jpg");
+        background-image: $color-mask-tertiary, url("../img/index/card-background-start-mobile.jpg");
 
         @include retina() {
-          background-image: $color-mask-tertiary, url("../../img/index/card-background-start-mobile@2x.jpg");
+          background-image: $color-mask-tertiary, url("../img/index/card-background-start-mobile@2x.jpg");
         }
       }
     }
   }
 
   &--second {
-    background-image: $color-mask-secondary, url("../../img/index/card-background-center.jpg");
+    background-image: $color-mask-secondary, url("../img/index/card-background-center.jpg");
 
     @media (min-width: $vp-1024) {
       @include retina() {
-        background-image: $color-mask-secondary, url("../../img/index/card-background-center@2x.jpg");
+        background-image: $color-mask-secondary, url("../img/index/card-background-center@2x.jpg");
       }
     }
 
     &:hover {
-      background-image: $color-mask-tertiary, url("../../img/index/card-background-center.jpg");
+      background-image: $color-mask-tertiary, url("../img/index/card-background-center.jpg");
 
       @media (min-width: $vp-1024) {
         @include retina() {
-          background-image: $color-mask-tertiary, url("../../img/index/card-background-center@2x.jpg");
+          background-image: $color-mask-tertiary, url("../img/index/card-background-center@2x.jpg");
         }
       }
     }
 
     @include vp-1023() {
-      background-image: $color-mask-secondary, url("../../img/index/card-background-center-tablet.jpg");
+      background-image: $color-mask-secondary, url("../img/index/card-background-center-tablet.jpg");
 
       @include retina() {
-        background-image: $color-mask-secondary, url("../../img/index/card-background-center-tablet@2x.jpg");
+        background-image: $color-mask-secondary, url("../img/index/card-background-center-tablet@2x.jpg");
       }
 
       &:hover {
-        background-image: $color-mask-tertiary, url("../../img/index/card-background-center-tablet.jpg");
+        background-image: $color-mask-tertiary, url("../img/index/card-background-center-tablet.jpg");
 
         @include retina() {
-          background-image: $color-mask-tertiary, url("../../img/index/card-background-center-tablet@2x.jpg");
+          background-image: $color-mask-tertiary, url("../img/index/card-background-center-tablet@2x.jpg");
         }
       }
     }
 
     @include vp-767() {
-      background-image: $color-mask-secondary, url("../../img/index/card-background-center-mobile.jpg");
+      background-image: $color-mask-secondary, url("../img/index/card-background-center-mobile.jpg");
 
       @include retina() {
-        background-image: $color-mask-secondary, url("../../img/index/card-background-center-mobile@2x.jpg");
+        background-image: $color-mask-secondary, url("../img/index/card-background-center-mobile@2x.jpg");
       }
 
       &:hover {
-        background-image: $color-mask-tertiary, url("../../img/index/card-background-center-mobile.jpg");
+        background-image: $color-mask-tertiary, url("../img/index/card-background-center-mobile.jpg");
 
         @include retina() {
-          background-image: $color-mask-tertiary, url("../../img/index/card-background-center-mobile@2x.jpg");
+          background-image: $color-mask-tertiary, url("../img/index/card-background-center-mobile@2x.jpg");
         }
       }
     }
   }
 
   &--third {
-    background-image: $color-mask-secondary, url("../../img/index/card-background-end.jpg");
+    background-image: $color-mask-secondary, url("../img/index/card-background-end.jpg");
 
     @media (min-width: $vp-1024) {
       @include retina() {
-        background-image: $color-mask-secondary, url("../../img/index/card-background-end@2x.jpg");
+        background-image: $color-mask-secondary, url("../img/index/card-background-end@2x.jpg");
       }
     }
 
     &:hover {
-      background-image: $color-mask-tertiary, url("../../img/index/card-background-end.jpg");
+      background-image: $color-mask-tertiary, url("../img/index/card-background-end.jpg");
 
       @media (min-width: $vp-1024) {
         @include retina() {
-          background-image: $color-mask-tertiary, url("../../img/index/card-background-end@2x.jpg");
+          background-image: $color-mask-tertiary, url("../img/index/card-background-end@2x.jpg");
         }
       }
     }
 
     @include vp-1023() {
-      background-image: $color-mask-secondary, url("../../img/index/card-background-end-tablet.jpg");
+      background-image: $color-mask-secondary, url("../img/index/card-background-end-tablet.jpg");
 
       @include retina() {
-        background-image: $color-mask-secondary, url("../../img/index/card-background-end-tablet@2x.jpg");
+        background-image: $color-mask-secondary, url("../img/index/card-background-end-tablet@2x.jpg");
       }
 
       &:hover {
-        background-image: $color-mask-tertiary, url("../../img/index/card-background-end-tablet.jpg");
+        background-image: $color-mask-tertiary, url("../img/index/card-background-end-tablet.jpg");
 
         @include retina() {
-          background-image: $color-mask-tertiary, url("../../img/index/card-background-end-tablet@2x.jpg");
+          background-image: $color-mask-tertiary, url("../img/index/card-background-end-tablet@2x.jpg");
         }
       }
     }
 
     @include vp-767() {
-      background-image: $color-mask-secondary, url("../../img/index/card-background-end-mobile.jpg");
+      background-image: $color-mask-secondary, url("../img/index/card-background-end-mobile.jpg");
 
       @include retina() {
-        background-image: $color-mask-secondary, url("../../img/index/card-background-end-mobile@2x.jpg");
+        background-image: $color-mask-secondary, url("../img/index/card-background-end-mobile@2x.jpg");
       }
 
       &:hover {
-        background-image: $color-mask-tertiary, url("../../img/index/card-background-end-mobile.jpg");
+        background-image: $color-mask-tertiary, url("../img/index/card-background-end-mobile.jpg");
 
         @include retina() {
-          background-image: $color-mask-tertiary, url("../../img/index/card-background-end-mobile@2x.jpg");
+          background-image: $color-mask-tertiary, url("../img/index/card-background-end-mobile@2x.jpg");
         }
       }
     }

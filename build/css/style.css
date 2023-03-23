@@ -788,104 +788,18 @@ button,
 .custom-input,
 .custom-textarea {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
-}
-
-.custom-input label,
-.custom-textarea label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-}
-
-.custom-input label input,
-.custom-input label textarea,
-.custom-textarea label input,
-.custom-textarea label textarea {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-width: 300px;
-  min-height: 48px;
-  margin-left: auto;
-  padding: 10px;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  outline: none;
-  -webkit-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
-  transition: border 0.3s ease;
-}
-
-.custom-input label input:hover,
-.custom-input label textarea:hover,
-.custom-textarea label input:hover,
-.custom-textarea label textarea:hover {
-  border: 2px solid rgba(0, 0, 0, 0.5);
-}
-
-.custom-input label input:focus,
-.custom-input label textarea:focus,
-.custom-textarea label input:focus,
-.custom-textarea label textarea:focus {
-  border: 2px solid rgba(0, 0, 0, 0.8);
-}
-
-.custom-input__error,
-.custom-textarea__error {
-  position: absolute;
-  right: 0;
-  bottom: 35px;
-  color: #ff1553;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-}
-
-.custom-input.is-invalid input,
-.custom-input.is-invalid textarea,
-.custom-textarea.is-invalid input,
-.custom-textarea.is-invalid textarea {
-  border: 2px solid #ff1553;
-}
-
-.custom-input.is-invalid input:focus,
-.custom-input.is-invalid input:hover,
-.custom-input.is-invalid textarea:focus,
-.custom-input.is-invalid textarea:hover,
-.custom-textarea.is-invalid input:focus,
-.custom-textarea.is-invalid input:hover,
-.custom-textarea.is-invalid textarea:focus,
-.custom-textarea.is-invalid textarea:hover {
-  border: 2px solid rgba(255, 21, 83, 0.5);
-}
-
-.custom-input.is-valid input,
-.custom-textarea.is-valid input {
-  border: 2px solid #22b259;
-}
-
-.custom-input.is-valid input:focus,
-.custom-input.is-valid input:hover,
-.custom-textarea.is-valid input:focus,
-.custom-textarea.is-valid input:hover {
-  border: 2px solid rgba(34, 178, 89, 0.5);
 }
 
 .custom-input .input-message,
 .custom-textarea .input-message {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  font-family: "PT Mono", "Arial", sans-serif;
   position: absolute;
-  right: 0;
-  bottom: -5px;
+  left: 0;
+  bottom: -20px;
 }
 
 .custom-input .input-message.is-invalid,
@@ -896,6 +810,10 @@ button,
 .custom-input .input-message.is-valid,
 .custom-textarea .input-message.is-valid {
   color: #15ab07;
+}
+
+.modal-form .input-message {
+  font-size: 14px;
 }
 
 .custom-toggle {
@@ -1347,20 +1265,18 @@ button,
   margin: 0;
   padding: 0;
   list-style-type: none;
+  -ms-grid-column-align: center;
+  justify-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-column-gap: 101px;
-  -moz-column-gap: 101px;
-  column-gap: 101px;
-  -ms-grid-column-align: center;
-  justify-self: center;
-  width: 480px;
+  width: 61.4%;
+  min-width: 400px;
   margin-top: 7px;
 }
 
@@ -1432,6 +1348,10 @@ button,
   letter-spacing: 0.95px;
   border: none;
   border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .button:hover {
@@ -1504,9 +1424,9 @@ button,
 .intro {
   min-height: 880px;
   background-color: #041827;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/index/intro-background.jpg");
-  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/index/intro-background.jpg");
-  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/index/intro-background.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/index/intro-background.jpg");
+  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/index/intro-background.jpg");
+  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/index/intro-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1627,7 +1547,7 @@ button,
   line-height: 1;
   color: transparent;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  background-image: url("../../img/index/year-mask.jpg");
+  background-image: url("../img/index/year-mask.jpg");
   background-repeat: no-repeat;
   background-size: 586px 488px;
   background-position: -190px -40px;
@@ -1728,9 +1648,9 @@ button,
   display: grid;
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
-  -webkit-column-gap: 85px;
-  -moz-column-gap: 85px;
-  column-gap: 85px;
+  -webkit-column-gap: 7%;
+  -moz-column-gap: 7%;
+  column-gap: 7%;
   row-gap: 65px;
 }
 
@@ -1738,6 +1658,7 @@ button,
   display: block;
   padding: 27px 40px;
   min-height: 650px;
+  height: 100%;
   background-color: #00b2ff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1746,39 +1667,39 @@ button,
 }
 
 .services__link--first {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-start.jpg");
-  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start.jpg");
-  background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/index/card-background-start.jpg");
+  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-start.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-start.jpg");
 }
 
 .services__link--first:hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-start.jpg");
-  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start.jpg");
-  background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../img/index/card-background-start.jpg");
+  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-start.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-start.jpg");
 }
 
 .services__link--second {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-center.jpg");
-  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center.jpg");
-  background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/index/card-background-center.jpg");
+  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-center.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-center.jpg");
 }
 
 .services__link--second:hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-center.jpg");
-  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center.jpg");
-  background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../img/index/card-background-center.jpg");
+  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-center.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-center.jpg");
 }
 
 .services__link--third {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-end.jpg");
-  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end.jpg");
-  background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/index/card-background-end.jpg");
+  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-end.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-end.jpg");
 }
 
 .services__link--third:hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-end.jpg");
-  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end.jpg");
-  background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../img/index/card-background-end.jpg");
+  background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-end.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-end.jpg");
 }
 
 .services__link h3 {
@@ -1947,6 +1868,18 @@ button,
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
+}
+
+.form input:not(input[type=checkbox]):-webkit-autofill {
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0px 1000px #009bde inset;
+  box-shadow: 0 0 0px 1000px #009bde inset;
+}
+
+.form input:not(input[type=checkbox]):autofill {
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0px 1000px #009bde inset;
+  box-shadow: 0 0 0px 1000px #009bde inset;
 }
 
 .form textarea {
@@ -2198,6 +2131,18 @@ button,
   color: #ffffff;
 }
 
+.modal-form__wrapper input:not(input[type=checkbox]):-webkit-autofill {
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0px 1000px #009bde inset;
+  box-shadow: 0 0 0px 1000px #009bde inset;
+}
+
+.modal-form__wrapper input:not(input[type=checkbox]):autofill {
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0px 1000px #009bde inset;
+  box-shadow: 0 0 0px 1000px #009bde inset;
+}
+
 .modal-form__wrapper textarea {
   height: 155px;
   display: block;
@@ -2436,6 +2381,37 @@ button,
   font-style: normal;
 }
 
+.custom-input,
+.custom-textarea {
+  position: relative;
+}
+
+.custom-input .input-message,
+.custom-textarea .input-message {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  font-family: "PT Mono", "Arial", sans-serif;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+}
+
+.custom-input .input-message.is-invalid,
+.custom-textarea .input-message.is-invalid {
+  color: #ff0000;
+}
+
+.custom-input .input-message.is-valid,
+.custom-textarea .input-message.is-valid {
+  color: #15ab07;
+}
+
+.modal-form .input-message {
+  font-size: 14px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -2479,45 +2455,45 @@ button,
 
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) {
   .intro {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/index/intro-background@2x.jpg");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/index/intro-background@2x.jpg");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/index/intro-background@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/index/intro-background@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/index/intro-background@2x.jpg");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/index/intro-background@2x.jpg");
   }
 
   .services__link--first {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-start@2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/index/card-background-start@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-start@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-start@2x.jpg");
   }
 
   .services__link--first:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-start@2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../img/index/card-background-start@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-start@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-start@2x.jpg");
   }
 
   .services__link--second {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-center@2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/index/card-background-center@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-center@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-center@2x.jpg");
   }
 
   .services__link--second:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-center@2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../img/index/card-background-center@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-center@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-center@2x.jpg");
   }
 
   .services__link--third {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-end@2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/index/card-background-end@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-end@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-end@2x.jpg");
   }
 
   .services__link--third:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-end@2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../img/index/card-background-end@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-end@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-end@2x.jpg");
   }
 }
 
@@ -2561,6 +2537,7 @@ button,
     margin-right: 20px;
     width: auto;
     margin-left: 10px;
+    min-width: auto;
   }
 
   .main-nav__link span {
@@ -2573,9 +2550,9 @@ button,
   }
 
   .intro {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/index/intro-background-tablet.jpg");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/index/intro-background-tablet.jpg");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/index/intro-background-tablet.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/index/intro-background-tablet.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/index/intro-background-tablet.jpg");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/index/intro-background-tablet.jpg");
     min-height: 640px;
     margin-top: -100px;
   }
@@ -2673,42 +2650,43 @@ button,
   .services__link {
     min-height: 250px;
     padding: 18px 45px;
+    height: auto;
   }
 
   .services__link--first {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-start-tablet.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start-tablet.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start-tablet.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/index/card-background-start-tablet.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-start-tablet.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-start-tablet.jpg");
   }
 
   .services__link--first:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-start-tablet.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start-tablet.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start-tablet.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../img/index/card-background-start-tablet.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-start-tablet.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-start-tablet.jpg");
   }
 
   .services__link--second {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-center-tablet.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center-tablet.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center-tablet.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/index/card-background-center-tablet.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-center-tablet.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-center-tablet.jpg");
   }
 
   .services__link--second:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-center-tablet.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center-tablet.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center-tablet.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../img/index/card-background-center-tablet.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-center-tablet.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-center-tablet.jpg");
   }
 
   .services__link--third {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-end-tablet.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end-tablet.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end-tablet.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/index/card-background-end-tablet.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-end-tablet.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-end-tablet.jpg");
   }
 
   .services__link--third:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-end-tablet.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end-tablet.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end-tablet.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../img/index/card-background-end-tablet.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-end-tablet.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-end-tablet.jpg");
   }
 
   .services__link h3 {
@@ -2839,45 +2817,45 @@ button,
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .intro {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/index/intro-background-tablet@2x.jpg");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/index/intro-background-tablet@2x.jpg");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/index/intro-background-tablet@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/index/intro-background-tablet@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/index/intro-background-tablet@2x.jpg");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/index/intro-background-tablet@2x.jpg");
   }
 
   .services__link--first {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-start-tablet@2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start-tablet@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start-tablet@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/index/card-background-start-tablet@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-start-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-start-tablet@2x.jpg");
   }
 
   .services__link--first:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-start-tablet@2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start-tablet@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start-tablet@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../img/index/card-background-start-tablet@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-start-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-start-tablet@2x.jpg");
   }
 
   .services__link--second {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-center-tablet@2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center-tablet@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center-tablet@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/index/card-background-center-tablet@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-center-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-center-tablet@2x.jpg");
   }
 
   .services__link--second:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-center-tablet@2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center-tablet@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center-tablet@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../img/index/card-background-center-tablet@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-center-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-center-tablet@2x.jpg");
   }
 
   .services__link--third {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-end-tablet@2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end-tablet@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end-tablet@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/index/card-background-end-tablet@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-end-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-end-tablet@2x.jpg");
   }
 
   .services__link--third:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-end-tablet@2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end-tablet@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end-tablet@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../img/index/card-background-end-tablet@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-end-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-end-tablet@2x.jpg");
   }
 }
 
@@ -2897,6 +2875,11 @@ button,
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .custom-input .input-message,
+  .custom-textarea .input-message {
+    font-size: 14px;
   }
 
   .main-nav {
@@ -2932,9 +2915,9 @@ button,
   }
 
   .intro {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/index/intro-background-mobile.jpg");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/index/intro-background-mobile.jpg");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/index/intro-background-mobile.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/index/intro-background-mobile.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/index/intro-background-mobile.jpg");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/index/intro-background-mobile.jpg");
     min-height: 560px;
     margin-top: -70px;
   }
@@ -3042,7 +3025,7 @@ button,
 
   .about__button {
     width: auto;
-    padding: 7px 40px 11px;
+    padding: 9px 40px 9px;
   }
 
   .services__wrapper {
@@ -3069,39 +3052,39 @@ button,
   }
 
   .services__link--first {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-start-mobile.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start-mobile.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start-mobile.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/index/card-background-start-mobile.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-start-mobile.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-start-mobile.jpg");
   }
 
   .services__link--first:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-start-mobile.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start-mobile.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start-mobile.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../img/index/card-background-start-mobile.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-start-mobile.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-start-mobile.jpg");
   }
 
   .services__link--second {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-center-mobile.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center-mobile.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center-mobile.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/index/card-background-center-mobile.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-center-mobile.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-center-mobile.jpg");
   }
 
   .services__link--second:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-center-mobile.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center-mobile.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center-mobile.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../img/index/card-background-center-mobile.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-center-mobile.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-center-mobile.jpg");
   }
 
   .services__link--third {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-end-mobile.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end-mobile.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end-mobile.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/index/card-background-end-mobile.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-end-mobile.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-end-mobile.jpg");
   }
 
   .services__link--third:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-end-mobile.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end-mobile.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end-mobile.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../img/index/card-background-end-mobile.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-end-mobile.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-end-mobile.jpg");
   }
 
   .services__link h3 {
@@ -3254,6 +3237,11 @@ button,
     -ms-flex-pack: start;
     justify-content: start;
     padding: 0;
+    max-width: none;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .accordion {
@@ -3286,25 +3274,14 @@ button,
     cursor: pointer;
   }
 
-  .accordion__content h3:hover {
-    color: #66d1ff;
-  }
-
-  .accordion__content h3:active {
+  .accordion__content h3.focus-visible:active {
     color: #008ecc;
   }
 
-  .accordion__content h3.is-open:hover::before,
-  .accordion__content h3.is-open:hover::after,
-  .accordion__content h3.is-close:hover::before,
-  .accordion__content h3.is-close:hover::after {
-    background-color: #66d1ff;
-  }
-
-  .accordion__content h3.is-open:active::before,
-  .accordion__content h3.is-open:active::after,
-  .accordion__content h3.is-close:active::before,
-  .accordion__content h3.is-close:active::after {
+  .accordion__content h3.is-open.focus-visible:active::before,
+  .accordion__content h3.is-open.focus-visible:active::after,
+  .accordion__content h3.is-close.focus-visible:active::before,
+  .accordion__content h3.is-close.focus-visible:active::after {
     background-color: #00a0e6;
   }
 
@@ -3389,44 +3366,14 @@ button,
   .accordion__item address {
     margin-bottom: 10px;
   }
+
+  .custom-input .input-message,
+  .custom-textarea .input-message {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-  .custom-input,
-  .custom-textarea {
-    padding: 4px 0 48px;
-    width: 100%;
-  }
-
-  .custom-input label,
-  .custom-textarea label {
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .custom-input label input,
-  .custom-input label textarea,
-  .custom-textarea label input,
-  .custom-textarea label textarea {
-    max-width: unset;
-    width: 100%;
-  }
-
-  .custom-input__label,
-  .custom-textarea__label {
-    margin: 0 0 18px 0;
-  }
-
-  .custom-input__error,
-  .custom-textarea__error {
-    bottom: 20px;
-  }
-
   .custom-toggle {
     padding: 14px 0 10px 0;
     width: 100%;
@@ -3456,45 +3403,58 @@ button,
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .intro {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/index/intro-background-mobile@2x.jpg");
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/index/intro-background-mobile@2x.jpg");
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/index/intro-background-mobile@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/index/intro-background-mobile@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/index/intro-background-mobile@2x.jpg");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/index/intro-background-mobile@2x.jpg");
   }
 
   .services__link--first {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-start-mobile@2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start-mobile@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-start-mobile@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/index/card-background-start-mobile@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-start-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-start-mobile@2x.jpg");
   }
 
   .services__link--first:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-start-mobile@2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start-mobile@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-start-mobile@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../img/index/card-background-start-mobile@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-start-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-start-mobile@2x.jpg");
   }
 
   .services__link--second {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-center-mobile@2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center-mobile@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-center-mobile@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/index/card-background-center-mobile@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-center-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-center-mobile@2x.jpg");
   }
 
   .services__link--second:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-center-mobile@2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center-mobile@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-center-mobile@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../img/index/card-background-center-mobile@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-center-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-center-mobile@2x.jpg");
   }
 
   .services__link--third {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../../img/index/card-background-end-mobile@2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end-mobile@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../../img/index/card-background-end-mobile@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/index/card-background-end-mobile@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-end-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/index/card-background-end-mobile@2x.jpg");
   }
 
   .services__link--third:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../../img/index/card-background-end-mobile@2x.jpg");
-    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end-mobile@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../../img/index/card-background-end-mobile@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.3)), to(rgba(4, 24, 39, 0.3))), url("../img/index/card-background-end-mobile@2x.jpg");
+    background-image: -o-linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-end-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.3), rgba(4, 24, 39, 0.3)), url("../img/index/card-background-end-mobile@2x.jpg");
+  }
+}
+
+@media (max-width: 767px) and (hover: hover) {
+  .accordion__content h3:hover:not(.focus-visible) {
+    color: #66d1ff;
+  }
+
+  .accordion__content h3.is-open:hover:not(.focus-visible)::before,
+  .accordion__content h3.is-open:hover:not(.focus-visible)::after,
+  .accordion__content h3.is-close:hover:not(.focus-visible)::before,
+  .accordion__content h3.is-close:hover:not(.focus-visible)::after {
+    background-color: #66d1ff;
   }
 }
 
@@ -3514,6 +3474,6 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .about__wrapper > span {
-    background-image: url("../../img/index/year-mask@2x.jpg");
+    background-image: url("../img/index/year-mask@2x.jpg");
   }
 }

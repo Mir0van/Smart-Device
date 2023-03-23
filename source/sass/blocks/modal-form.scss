@@ -46,6 +46,11 @@
     }
   }
 
+  input:not(input[type="checkbox"]):autofill {
+    -webkit-text-fill-color: $color-default-white;
+    box-shadow: 0 0 0px 1000px darken($color-brand, 6.5%) inset;
+  }
+
   textarea {
     height: 155px;
     display: block;

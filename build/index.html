@@ -138,14 +138,14 @@
             <div class="question__form-wrapper">
               <h2>Остались вопросы? Задайте&nbsp;их&nbsp;нам!</h2>
               <p>Мы проконсультируем Вас бесплатно</p>
-              <div class="question__form form">
+              <div class="question__form form" data-form-validate data-callback="base">
                 <form action="https://echo.htmlacademy.ru/" method="get">
-                  <div class="form__input-text">
+                  <div class="form__input-text custom-input" data-validate-type="text" data-message-base="Введите ваше имя" data-required>
                     <label>
                       <input type="text" name="name" placeholder="Имя" required>
                     </label>
                   </div>
-                  <div class="form__input-tel">
+                  <div class="form__input-tel custom-input" data-validate-type="phone" data-on-input-validate data-message-base="Введите ваш телефон" data-message-extra="Номер введен не полностью" data-required>
                     <label>
                       <input type="tel" name="tel" placeholder="Телефон" required>
                     </label>
@@ -155,7 +155,7 @@
                       <textarea name="question" placeholder="Ваш вопрос"></textarea>
                     </label>
                   </div>
-                  <div class="form__checkbox checkbox">
+                  <div class="form__checkbox checkbox custom-input" data-validate-type="checkbox" data-message-base="Требуется согласие" data-required>
                     <label>
                       <input class="visually-hidden" type="checkbox" name="agree-with-politicy" value="agree" required>
                       <span class="checkbox__control-mark"></span>
@@ -267,14 +267,14 @@
         <div class="modal__content modal-form">
           <h2>Закажите звонок</h2>
           <p>Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
-          <div class="modal-form__wrapper">
+          <div class="modal-form__wrapper" data-form-validate data-callback="base">
             <form action="https://echo.htmlacademy.ru/" method="get">
-              <div class="form__input-text">
+              <div class="form__input-text custom-input" data-validate-type="text" data-message-base="Введите ваше имя" data-required>
                 <label>
                   <input type="text" name="name" placeholder="Имя" required>
                 </label>
               </div>
-              <div class="form__input-tel">
+              <div class="form__input-tel custom-input" data-validate-type="phone" data-on-input-validate data-message-base="Введите ваш телефон" data-message-extra="Номер введен не полностью" data-required>
                 <label>
                   <input type="tel" name="tel" placeholder="Телефон" required>
                 </label>
@@ -284,7 +284,7 @@
                   <textarea name="question" placeholder="Ваш вопрос"></textarea>
                 </label>
               </div>
-              <div class="form__checkbox checkbox">
+              <div class="form__checkbox checkbox custom-input" data-validate-type="checkbox" data-message-base="Требуется согласие" data-required>
                 <label>
                   <input class="visually-hidden" type="checkbox" name="agree-with-politicy" value="agree" required>
                   <span class="checkbox__control-mark"></span>

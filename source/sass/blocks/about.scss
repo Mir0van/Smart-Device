@@ -25,7 +25,7 @@
   & > span {
     @include font-values(700, 156px, 1, transparent);
     font-family: $font-secondary;
-    background-image: url("../../img/index/year-mask.jpg");
+    background-image: url("../img/index/year-mask.jpg");
     background-repeat: no-repeat;
     background-size: 586px 488px;
     background-position: -190px -40px;
@@ -39,7 +39,7 @@
     margin-top: -3px;
 
     @include retina() {
-      background-image: url("../../img/index/year-mask@2x.jpg");
+      background-image: url("../img/index/year-mask@2x.jpg");
     }
 
     @include vp-1023() {
@@ -110,6 +110,6 @@
 
   @include vp-767() {
     width: auto;
-    padding: 7px 40px 11px;
+    padding: 9px 40px 9px;
   }
 }
